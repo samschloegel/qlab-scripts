@@ -64,7 +64,7 @@ Sam
 
 ### Change all levels by dialog
 
-- A dialog asks for an increment value (can be negative, to decrement) and then changes all cue output fader value of a single selected cue by that amount.
+- A dialog asks for an increment value (can be negative, to decrement) and then changes all cue output fader values of a single selected cue by that amount.
 - There are probably better ways to accomplish the same goal here, but maybe you're working for someone who wants to do it this way, and this can save you the headache.
 
 ### Master Increment, Decrement, to -inf, to 0dB
@@ -81,7 +81,7 @@ Sam
 
 ### Show overrides, position windows
 
-- Moves the floating overrides window to the corner of the screen and adjusts the workspace window to not overlap it horizontally - a useful alignment tool if you need to the overrides window open peristently throughout a show.
+- Moves the floating overrides window to the corner of the screen and adjusts the workspace window to not overlap it horizontally - a useful alignment tool if you need to keep the overrides window open peristently throughout a show.
 
 ---
 
@@ -99,7 +99,7 @@ Sam
 
 ### Target version bump by filename
 
-- You have a group audio cues, which act as stems for a piece of music. The filenames all end in "v03" or something like that. You just re-exported them all with "v04" but you don't want to manually re-target everything, because it's tedious and no one wants to hold for sound. Use this script instead! As long as you put all the "v04" files into the folder where the "v03" files live, this should save you time.
+- You have a group of audio cues, which are stems for a piece of music. The filenames all end in "v03" or something like that. You just re-exported them all with "v04" but you don't want to manually re-target everything, because it's tedious and no one wants to hold for sound. Use this script instead! As long as you put all the "v04" files into the folder where the "v03" files live, this should save you time.
 
 ### Target version bump by folder
 
@@ -114,16 +114,16 @@ Sam
 
 These three scripts work together as a group.
 
-There are some variables at the begining that can alter if you'd like.
+There are some variables at the begining which you can alter if you'd like.
 
-- set userNumPrefix to "y" -- Change this if you want but make sure you do it consistently across all scripts in this folder.
-- set userNamePrefix to "Yamaha Scene" -- same as above
-- set userColor to "Purple" -- User whatever color you prefer for your Yamaha Scene recall cues, but make sure to do it for all scripts in this folder so they can work well together.
+- `set userNumPrefix to "y"` -- Change this if you'd like, but make sure you do it consistently across all scripts in this folder.
+- `set userNamePrefix to "Yamaha Scene"` -- same notes as above
+- `set userColor to "Purple"` -- Use whatever color you prefer for your Yamaha Scene recall cues, but make sure to change it for all scripts in this folder, so they can work well together.
 
 Once you've altered variables (if any):
 
-1. Create a new cue list and run the `Yamaha 300 Generator` inside it.
-1. Back in your main list, run either of the other scripts, whichever better suits your workflow.
+1. Create a new cue list and run the `Yamaha 300 Generator` script inside it.
+1. Back in your main cue list, run either of the other scripts from a hotkey - whichever better suits your workflow.
 
 ---
 
@@ -135,11 +135,11 @@ Once you've altered variables (if any):
 
 ### Complete selected
 
-- That one long cue takes forever, you're in tech and you need it to complete in order to get yourself in place to continue from where you left off. This script loads the selected cue to 99.9% complete, and then fires it. Let's move on.
+- That one long cue takes forever, you're in tech, and you need the cue to complete in order to get in place to continue. This script loads the selected cue to 99.9% complete, and then fires it. Let's move on.
 
 ### Copy uniqueID of selected
 
-- Copies the uniqueID of the selected cue to the clipboard. If multiple cues are selected, only copies from the last one.
+- Copies the uniqueID of the selected cue to the clipboard. If multiple cues are selected, only copies the ID of the last one.
 
 ### Create fade-and-stops for selected
 
@@ -160,7 +160,7 @@ Once you've altered variables (if any):
 ### Group selected, inherit name
 
 - Puts selected cues in a group together
-- Why use this instead of the New Group Cue hotkey? Because it work even if there is only one cue selected - and in that case, will copy the cue's name to the group's name
+- Why use this instead of the New Group Cue hotkey? Because it works even if there is only one cue selected - and in that case, it will copy the cue's name to the group's name
 
 ### Load Parent Group to start of selected Child
 
@@ -169,8 +169,8 @@ Once you've altered variables (if any):
 
 ### Move to cut list
 
-- Enter the name of your cut cues cue list in the variable at the beginning. Then, instead of deleting cues in your main list, select them and run this script instead.
-- The cut cues are moved the list you've chosen, they are disabled, and their hotkey, MIDI, timecode, and wall clock triggers are turned off.
+- Set the `cutListName` variable to the name of your "cut cues" cue list. Then, instead of _deleting_ cues in your main list, select them and run this script instead.
+- The cues are moved the list you've chosen, disabled, and their hotkey, MIDI, timecode, and wall clock triggers are turned off.
 
 ### Put selected into individual groups
 
@@ -180,7 +180,7 @@ Once you've altered variables (if any):
 
 - This one is funny. Use at your own risk - but it might just recover you from a catastrophic mistake.
 - All this does it move the playhead up a sequence and stop the cue in that position if it is running.
-- This was written for an A1 who had to trigger IEM click tracks from within the main cue list. If the A1 accidentally triggered the click track too earlier, this enabled a fast recovery with minimal mind-bending distractions to the cast.
+- This was written for an A1 who had to trigger IEM click tracks from within the main cue list. If the A1 accidentally triggered the click track too early, this enabled a fast recovery with minimal mind-bending distractions to the cast.
 
 ### Which cues use output x?
 
@@ -188,4 +188,4 @@ Once you've altered variables (if any):
 - Before using, change the `userThresh` variable at the top of the script to match your setting for Min Volume Limit (Workspace Preferences > Audio > top right section)
 - Might help answer questions like:
   - Wow, did the sound designer _really_ need _ALL_ these cue outputs?
-  - "Oh no, I need another cue output but I've already maxed out my interface channels. But wait, did I even use that one output? Maybe I can re-allocate it."
+  - Oh no, I need another cue output but I've already maxed out my interface channels. But wait, did I even use that one output? Maybe I can re-allocate it.
