@@ -1,6 +1,6 @@
 # qlab-scripts
 
-Complex QLab programming can be made much simpler with the use of Applescript automation. This is a collection of scripts I have found useful in various situations. Some are broadly useful, some are very specific to one particular problem. Some I wrote for myself, some I wrote to make someone else's workflow easier. It's a mixed bag.
+Complex [QLab](https://qlab.app/) programming can be made much simpler with the use of Applescript automation. This is a collection of scripts I have found useful in various situations. Some are broadly useful, some are very specific to one particular problem. Some I wrote for myself, some I wrote to make someone else's workflow easier. It's a mixed bag.
 
 Each script can be copy-pasted into a QLab Script Cue, or run from the Script Editor utility included with macOS.
 
@@ -13,6 +13,10 @@ Let me know if you get any use out of these, I'd love to hear about it.
 Cheers,
 
 Sam
+
+---
+
+Not affiliated with [Figure53](https://figure53.com/). QLab's Applescript documentation can be found [here](https://qlab.app/docs/v4/scripting/applescript-dictionary-v4/).
 
 ---
 
