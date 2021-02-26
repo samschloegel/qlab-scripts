@@ -1,0 +1,9 @@
+set userPreRoll to 2.0
+
+tell application id "com.figure53.QLab.4" to tell front workspace
+	set theCue to last item of (selected as list)
+	set thePre to pre wait of theCue
+	set theParent to parent of theCue
+	load theParent time (thePre - userPreRoll)
+	set playback position of parent list of theParent to cue id (uniqueID of theParent)
+end tell
