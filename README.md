@@ -153,6 +153,11 @@ Once you've altered variables (if any):
 
 - Self-explanatory, useful on a hotkey
 
+### Create OSC trigger for cue x
+
+- Creates a network cue with the custom message "/cue/x/go" where x is the value entered into a dialog by the user
+- Before using, define `userPrefix`, `userSuffix`, and `userPatch` variables at the beginning
+
 ### Create OSC triggers for selected
 
 - Creates a group of network cues that fire the selected cues
