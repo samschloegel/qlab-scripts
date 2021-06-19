@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set qlabMain to machine "eppc://username:password@QLab-Main.local"
 set qlabBackup to machine "eppc://username:password@QLab-Backup.local"
 

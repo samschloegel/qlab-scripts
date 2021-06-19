@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set versionLength to 2 -- How many digits for versioning? v1 / v01, 2 digits recommended
 
 tell application id "com.figure53.QLab.4" to tell front workspace

@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set versionLength to 2 -- How many digits for versioning? v1 / v01
 -- Do not use slashes in your filenames
 

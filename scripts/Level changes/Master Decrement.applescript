@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set userDecrement to 2 -- enter your desired decrement here
 
 tell application id "com.figure53.QLab.4" to tell front workspace

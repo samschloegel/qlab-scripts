@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set userDuration to 5 -- your preferred default fade duration
 
 tell application id "com.figure53.QLab.4" to tell front workspace

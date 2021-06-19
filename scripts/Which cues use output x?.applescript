@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set userThresh to -100
 
 tell application id "com.figure53.qlab.4" to tell front workspace

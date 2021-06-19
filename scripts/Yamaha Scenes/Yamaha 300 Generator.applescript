@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set userPrefix to "y"
 set userNamePrefix to "Yamaha Scene"
 set showMIDIInfo to true

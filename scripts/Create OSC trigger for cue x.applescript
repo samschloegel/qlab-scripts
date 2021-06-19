@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set userPatch to 1
 set userPrefix to ""
 set userSuffix to "."

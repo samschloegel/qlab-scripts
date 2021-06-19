@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 tell application "Finder"
 	set desktopXY to items 3 thru 4 of (get bounds of window of desktop)
 	set desktopX to item 1 of desktopXY

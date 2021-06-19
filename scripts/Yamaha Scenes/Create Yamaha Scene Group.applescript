@@ -1,3 +1,5 @@
+-- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+
 set userNumPrefix to "y"
 set userNamePrefix to "Yamaha Scene"
 set userColor to "Purple"
