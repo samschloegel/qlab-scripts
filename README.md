@@ -64,6 +64,24 @@ Not affiliated with [Figure53](https://figure53.com/). QLab's Applescript docume
 
 ---
 
+## DiGiCo Snapshots
+
+These three scripts work together as a group. (See below for Yamaha Scenes equivalent.)
+
+There are some variables at the begining which you can alter if you'd like.
+
+- `set userNumPrefix to "sd"` -- Change this if you'd like, but make sure you do it consistently across all scripts in this folder.
+- `set userCount` -- input the number of DiGiCo snapshots in your cue list.
+- `set userNamePrefix to "SD Snapshot"` -- same notes as above
+- `set userColor to "Purple"` -- Use whatever color you prefer for your DiGiCo Snapshot recall cues, but make sure to change it for all scripts in this folder, so they can work well together.
+
+Once you've altered variables (if any):
+
+1. Create a new cue list and run the `DiGiCo CC Generator` script inside it.
+1. Back in your main cue list, run either of the other two scripts from a hotkey - whichever better suits your workflow.
+
+---
+
 ## Level Changes
 
 ### Change all levels by dialog
