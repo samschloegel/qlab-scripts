@@ -1,8 +1,9 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+-- Built for QLab 4. v211121-01
 
-set userThresh to -100
+set userThresh to -100 -- Match this value to your workspace settings. Workspace Settings > Audio > Volume Limits > Min
 
-tell application id "com.figure53.qlab.4" to tell front workspace
+tell application id "com.figure53.QLab.4" to tell front workspace
 	set theSelection to (selected as list)
 	set theList to {}
 	set theOut to (display dialog "Which cue output?" default answer "1" buttons {"Cancel", "Go"} default button "Go")

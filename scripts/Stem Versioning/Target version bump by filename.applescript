@@ -1,4 +1,5 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+-- Built for QLab 4. v211121-01
 
 set versionLength to 2 -- How many digits for versioning? v1 / v01, 2 digits recommended
 

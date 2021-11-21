@@ -1,11 +1,12 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
+-- Built for QLab 4. v211121-01
 
 tell application "Finder"
 	set desktopX to item 3 of (get bounds of window of desktop)
 	set desktopY to item 4 of (get bounds of window of desktop)
 end tell
 
-tell application id "com.figure53.qlab.4"
+tell application id "com.figure53.QLab.4"
 	if overrides visibility of overrides is false then
 		set overrides visibility of overrides to true
 	end if
@@ -23,7 +24,7 @@ tell application "System Events"
 	end if
 end tell
 
-tell application id "com.figure53.qlab.4"
+tell application id "com.figure53.QLab.4"
 	set workspaceBounds to {theORWidth, 0, desktopX, desktopY}
 	set bounds of window id (uniqueID of workspaceWindowProps) to workspaceBounds
 end tell
