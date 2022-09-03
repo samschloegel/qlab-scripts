@@ -89,9 +89,10 @@ Once you've altered variables (if any):
 - A dialog asks for an increment value (can be negative, to decrement) and then changes all cue output fader values of a single selected cue by that amount.
 - There are probably better ways to accomplish the same goal here, but maybe you're working for someone who wants to do it this way, and this can save you the headache.
 
-### Master Increment, Decrement, to -inf, to 0dB
+### Master/Main Increment, Decrement, to -inf, to 0dB
 
-- Self-explanatory, useful on a hotkey
+- Self-explanatory, useful on a hotkey.
+- These scripts may perform better when not run in a separate process. For example, tapping the hotkey in rapid bursts often performs better when that option is not selected.
 
 ---
 
