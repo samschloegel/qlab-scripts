@@ -19,7 +19,7 @@ Sam
 
 ---
 
-Not affiliated with [Figure53](https://figure53.com/). QLab's Applescript documentation can be found [here](https://qlab.app/docs/v4/scripting/applescript-dictionary-v4/).
+Not affiliated with [Figure53](https://figure53.com/). QLab's Applescript documentation can be found [here](https://qlab.app/docs/v5/scripting/applescript-dictionary-v5/).
 
 ---
 
