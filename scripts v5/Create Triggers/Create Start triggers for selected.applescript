@@ -1,7 +1,5 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
--- Built for QLab 5. v211121-01
-
-set userPatch to 1
+-- Built for QLab 5. v230416-01
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set theSelection to (selected as list)
@@ -9,14 +7,10 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 	repeat with eachCue in theSelection
 		set theQ to q number of eachCue
 		set selected to eachCue
-		if theQ is not "" then
-			make type "Network"
-			set newCue to last item of (selected as list)
-			set patch of newCue to userPatch
-			set osc message type of newCue to custom
-			set custom message of newCue to ("/cue/" & theQ & "/start")
-			set end of newCues to newCue
-		end if
+		make type "Start"
+		set newCue to last item of (selected as list)
+		set cue target of newCue to eachCue
+		set end of newCues to newCue
 	end repeat
 	if length of newCues is not 0 then
 		make type "Group"
