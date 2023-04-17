@@ -23,4 +23,3 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 	end repeat
 	
 end tell
-
