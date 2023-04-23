@@ -1,10 +1,11 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
--- Built for QLab 5. v230423-01
+-- Built for QLab 5. v230423-02
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set theSelection to (selected as list)
+	set defaultPrefix to q display name of first item of theSelection
 	try
-		set newPrefix to display dialog "Prefix?" default answer "" buttons {"Cancel", "Continue"} default button "Continue"
+		set newPrefix to display dialog "Prefix?" default answer defaultPrefix buttons {"Cancel", "Continue"} default button "Continue"
 		if button returned of newPrefix is "Cancel" then return
 		set newPrefix to text returned of newPrefix
 		--
