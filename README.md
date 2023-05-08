@@ -9,7 +9,7 @@ Many of the scripts here are best used in a Script Cue, with an assigned hotkey 
 > **A note about QLab 4 vs QLab 5:** There are now separate folders for scripts built for these different versions.
 > Over time, I will be spending less time consciously updating scripts for QLab 4. Most of the v4 scripts were last used/tested before the release of 4.7.0.
 
-Any questions, suggestions, bug reports, or other feedback - please [submit an issue](https://github.com/samschloegel/qlab-scripts/issues) or [send me an email](mailto:samsdomainaddress@gmail.com)!
+Any questions, suggestions, bug reports, or other feedback - please [submit an issue](https://github.com/samschloegel/qlab-scripts/issues) or [send me an email](mailto:hello@schloegel.nyc)!
 
 Let me know if you get any use out of these, I'd love to hear about it.
 
