@@ -1,28 +1,39 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "QLab Scripts",
+  title: "samschloegel/qlab-scripts",
   description: "Sam's QLab Scripts",
+  base: "/qlab-scripts/",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "Home", link: "/" },
+      { text: "Scripts", link: "/scripts/" },
     ],
-
     sidebar: [
       {
-        text: 'Examples',
+        text: "Notes",
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "How to use", link: "/scripts/how-to" },
+          { text: "QLab 5 vs QLab 4", link: "/scripts/version" },
+        ],
+      },
+      {
+        text: "Scripts",
+        items: [
+          { text: "Batch Cue Edits", link: "/scripts/batch-cue-edits" },
+          { text: "Console Recalls", link: "/scripts/console-recalls" },
+          { text: "Creating Fades", link: "/scripts/create-fades" },
+          { text: "Creating Triggers", link: "/scripts/create-triggers" },
+          { text: "Level Changes", link: "/scripts/level-changes" },
+          { text: "Manage Overrides", link: "/scripts/manage-overrides" },
+          { text: "Remote Control of macOS", link: "/scripts/remote-control" },
+          { text: "Stem Files Versioning", link: "/scripts/stem-files" },
+          { text: "Other Miscellaneous", link: "/scripts/other" },
+        ],
+      },
     ],
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/samschloegel/qlab-scripts" },
+    ],
+  },
+});
