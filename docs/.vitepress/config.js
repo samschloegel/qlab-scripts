@@ -54,6 +54,8 @@ export default defineConfig({
               { text: "Other", link: "/scripts/batch-edits/other" },
             ],
           },
+
+          { text: "Creating Fades, etc.", link: "/scripts/create-cues" },
           {
             text: "Console Recalls",
             collapsed: false,
@@ -68,8 +70,6 @@ export default defineConfig({
               },
             ],
           },
-          { text: "Creating Fades", link: "/scripts/create-fades" },
-          { text: "Creating Triggers", link: "/scripts/create-triggers" },
           { text: "Manage Overrides", link: "/scripts/manage-overrides" },
           { text: "Remote Control of macOS", link: "/scripts/remote-control" },
           { text: "Miscellaneous", link: "/scripts/misc" },
