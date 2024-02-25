@@ -10,20 +10,13 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
-      {
-        text: "Scripts",
-        items: [
-          { text: "QLab 5", link: "/scripts/" },
-          { text: "QLab 4", link: "/scripts/" },
-        ],
-      },
     ],
     sidebar: [
       {
-        text: "Notes",
+        text: "Guide",
         items: [
-          { text: "How to use", link: "/scripts/how-to" },
-          { text: "QLab 5 vs QLab 4", link: "/scripts/version" },
+          { text: "How to use", link: "/guide/" },
+          { text: "QLab 5 vs QLab 4", link: "/guide/4v5" },
         ],
       },
       {

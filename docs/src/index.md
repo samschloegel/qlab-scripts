@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Documentation
-      link: /scripts/index
+      link: /guide/
     - theme: alt
       text: View Repo
       link: https://github.com/samschloegel/qlab-scripts
