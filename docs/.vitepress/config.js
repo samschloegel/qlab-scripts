@@ -62,11 +62,11 @@ export default defineConfig({
             items: [
               {
                 text: "Yamaha Scenes",
-                link: "/scripts/console-recalls-yamaha",
+                link: "/scripts/console-recalls/yamaha",
               },
               {
                 text: "DiGiCo Snapshots",
-                link: "/scripts/console-recalls-digico",
+                link: "/scripts/console-recalls/digico",
               },
             ],
           },
