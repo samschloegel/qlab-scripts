@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "QLab Scripts"
+  name: "Sam's QLab Scripts"
   tagline: Complex QLab programming can be made much simpler with the use of Applescript automation.
   actions:
     - theme: brand
