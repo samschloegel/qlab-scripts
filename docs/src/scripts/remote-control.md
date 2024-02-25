@@ -1,6 +1,20 @@
 # Remote Control of macOS
 
+## How to use
+
+These scripts use 'eppc' address, with the format:
+
+`eppc://username:password@Hostname.local`
+
+You will need to replace the `username`, `password`, and `Hostname` portions of these addresses in each script according to your needs.
+
 ## App Launch
+
+::: tip USER PARAMETERS
+
+Replace the name of the app to meet your needs.
+
+:::
 
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
@@ -16,6 +30,12 @@ end using terms from
 ```
 
 ## File Open
+
+::: tip USER PARAMETERS
+
+Replace the name and path of the files to meet your needs.
+
+:::
 
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts

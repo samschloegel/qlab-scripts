@@ -2,7 +2,13 @@
 
 ## Main Level Increment
 
-```applescript
+::: tip USER PARAMETERS
+
+`userIncrement` is the number of decibels by which the 'Main' level of the selected cues will be incremented
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v220903-01
 
@@ -22,7 +28,13 @@ end tell
 
 ## Main Level Decrement
 
-```applescript
+::: tip USER PARAMETERS
+
+`userDecrement` is the number of decibels by which the 'Main' level of the selected cues will be decremented
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v220903-01
 
@@ -74,7 +86,19 @@ end tell
 
 ## Change all cue levels by dialog
 
-```applescript
+- A dialog asks for an increment value (can be negative, to decrement) and then changes all cue output fader values of a single selected cue by that amount.
+
+- There are probably better ways to accomplish the same goal here, but maybe you're working for someone who wants to do it this way, and this can save you the headache.
+
+::: tip USER PARAMETERS
+
+`defaultChange` is the pre-filled value for the user-input dialog
+
+`minLevel` should be set to match the value in Workspace Settings > Audio > Volume Limits > Min. This is the level at or below which cue levels will be considered '-inf'.
+
+:::
+
+```applescript{4-5}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v220903-01
 
@@ -121,6 +145,12 @@ end tell
 ```
 
 ## Clear Gangs
+
+::: tip USER PARAMETERS
+
+`outputCount` is the number of cue outputs you are using (or wish to remove gangs from)
+
+:::
 
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts

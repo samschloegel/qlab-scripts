@@ -2,13 +2,15 @@
 
 ## Change Network Patch
 
-::: info USER PARAMETERS
+Change the patch of selected cues, without touching the mouse.
 
-`networkPatchQty` : integer quantity of network patches used in your workspace
+::: tip USER PARAMETERS
+
+`networkPatchQty` is the integer quantity of network patches used in your workspace
 
 :::
 
-```applescript
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v220903-01
 
@@ -53,6 +55,8 @@ end tell
 ```
 
 ## Toggle boolean argument of network cue
+
+If the last character of the custom message of a network cue is 1 or 0, toggle it. This is useful for OSC messages which change mute states or other boolean states.
 
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts

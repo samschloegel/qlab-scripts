@@ -2,11 +2,17 @@
 
 ## Fades for Selected Cues
 
-```applescript
+::: tip USER PARAMETERS
+
+`userDuration` is the duration in seconds of the generated fade cues
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
-set userDuration to 5 -- your preferred default fade duration
+set userDuration to 5
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set newCues to {}
@@ -38,11 +44,17 @@ end tell
 
 ## Fade-and-Stops for Selected Cues
 
-```applescript
+::: tip USER PARAMETERS
+
+`userDuration` is the duration in seconds of the generated fade cues
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
-set userDuration to 5 -- your preferred default fade duration
+set userDuration to 5
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set newCues to {}
@@ -75,13 +87,29 @@ end tell
 
 ## OSC Trigger for Cue X
 
+This is an edge-use thing and only useful if you need QLab to trigger itself via OSC for some particular reason.
+
+> **Example:**
+>
+> LX is triggering some (but not all) QLab cues, in a way that forces the QLab user to conform to the LX cue numbering. All cues in the Main cue stack are given a prefix or suffix to avoid unintended triggers from LX. All LX-triggered QLab cues live in a dedicated cue list, and this script is used to generate the contents of that cue list quickly, without the user needing to type the prefix or suffix each time they add a cue to the stack.
+
+::: tip USER PARAMETERS
+
+`userPatch` is the OSC output patch name of the generated cues
+
+`userPrefix` is the cue number prefix, if needed (edge use case)
+
+`userSuffix` is the cue number suffix, if needed (edge use case)
+
+:::
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
 set userPatch to "This QLab"
 set userPrefix to ""
-set userSuffix to "."
+set userSuffix to ""
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	try
@@ -101,7 +129,15 @@ end tell
 
 ## OSC Triggers for Selected Cues
 
-```applescript
+Creates a group of network cues which target the selected cues
+
+::: tip USER PARAMETERS
+
+`userPatch` is the network patch name which points back to the local instance of QLab (typically localhost:53000)
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v230416-01
 
@@ -133,6 +169,8 @@ end tell
 
 ## Start Cues Targeting Selected Cues
 
+Creates a group of Start cues which target the selected cues
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v230416-01
@@ -156,46 +194,4 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 		end repeat
 	end if
 end tell
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
 ```

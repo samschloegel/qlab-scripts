@@ -2,6 +2,8 @@
 
 ## Add go to next cue to groups
 
+A weird fix for a weird cueing workflow. If you're using MIDI triggers that are specific to each cue fired, but still want selective advance-playhead control, this might be for you.
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -29,6 +31,8 @@ end tell
 
 ## Complete Selected
 
+That one long cue takes forever, you're in tech, and you need the cue to complete in order to get in place to continue. This script loads the selected cue to 99.9% complete, and then fires it. Let's move on.
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -43,7 +47,9 @@ end tell
 
 ## Copy uniqueID of Selected
 
-```applescript
+Copies the uniqueID of the selected cue to the clipboard. If multiple cues are selected, only copies the ID of the last one.
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v230416-01
 
@@ -59,7 +65,9 @@ end tell
 
 ## DS100 Speaker Check Builder
 
-```applescript
+Builds a cue list for checking individual outputs of a DS100, based on a CSV file, using OSC. Further description/explanation to come. Feel free to try it out in the meantime, but maybe not in your show file the first time.
+
+```applescript{4-6}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v231012-01
 
@@ -116,6 +124,8 @@ end tell
 
 ## Group Selected Individually
 
+Encapsulate each selected cue within its own group.
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -138,6 +148,10 @@ end tell
 ```
 
 ## Group Selected, Inherit Name
+
+Puts selected cues in a group together.
+
+Why use this instead of the New Group Cue hotkey? Because it works even if there is only one cue selected - and in that case, it will copy the cue's name to the group's name.
 
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
@@ -164,7 +178,15 @@ end tell
 
 ## Load Parent Group to Start of Selected Child
 
-```applescript
+You have a big, long-running timeline group. You're in tech and need to start from the beginning of the fourth child in the timeline. Select that child cue, and run this script using a hotkey. It will put you in the right place.
+
+::: tip USER PARAMETERS
+
+`userPreRoll` is the number of seconds prior to the start of the selected child at which to begin playback.
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
@@ -181,7 +203,17 @@ end tell
 
 ## Move to Cut List
 
-```applescript
+You need to delete some old cues and clean up your main cue list, but you think some of these might come back in the future, and you don't want to lose your work. Use this script to clean up without deleting.
+
+The selected cues are moved to the 'cut cues' list you've chosen. They are then Disabled, and their hotkey, MIDI, timecode, and wall clock triggers are turned off.
+
+::: tip USER PARAMETERS
+
+`cutListName` is the name of your "cut cues" cue list.
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
@@ -215,6 +247,14 @@ end tell
 
 ## "Undo Go"
 
+You hit 'GO' too soon and you're panicking. But don't panic all those cues that were already running! Just assign this as a hotkey near your panic button to only stop the cues from the most recently-triggered sequence.
+
+::: warning
+
+This could have some weird, unintended consequences, and is completely context-dependent. Only use if you know what you're doing.
+
+:::
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -228,11 +268,24 @@ end tell
 
 ## Which Cues Use Output X?
 
-```applescript
+This will comb through the selected cues to look for ones that use a given cue output that you're wondering about, then tell you how many cues use it, and select only those cues.
+
+This might help answer questions like:
+
+- Wow, did the sound designer really need and use ALL these cue outputs?
+- Oh no, I need another cue output - but I've already maxed out my interface channels! But wait - did I even use that one output? Maybe I can re-allocate it.
+
+::: tip USER PARAMETERS
+
+`userThresh` should be set to match the value in Workspace Settings > Audio > Volume Limits > Min. This is the level at or below which cue levels will be considered '-inf'.
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
-set userThresh to -100 -- Match this value to your workspace settings. Workspace Settings > Audio > Volume Limits > Min
+set userThresh to -100
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set theSelection to (selected as list)

@@ -5,15 +5,15 @@
 These scripts operate together as a set.
 
 1. Choose the appropriate "list generator" script for your console - CL Series or Rivage
-1. Run the "list generator" script in a new empty "Console Cues" cue list
+1. Run the "list generator" script (preferably from [Script Editor](/guide/#using-macos-script-editor)) in a new empty "Console Cues" cue list
 1. Add the "Add Scene to Cue List" scripts to your "Hotkeys" cue list
-1. In your "Main" show cue list, use the hotkey scripts to add console recalls to your show
+1. In your Main cue list, use the hotkey scripts to add console recalls to your show
 
-## CL-Series List Generator
+## CL Series List Generator
 
 This generates a cue list based on the default MIDI mapping for CL consoles. These have a fixed Program Change to Scene Recall map which is very laborious to edit or replace, so this simply follows that existing format so you don't have to think about it.
 
-::: info USER PARAMETERS
+::: tip USER PARAMETERS
 `userPrefix` is a cue-number prefix for the generated MIDI cues and should not be left blank
 
 `userNamePrefix` is a cue-name prefix for the generated MIDI cues
@@ -193,52 +193,4 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 		return
 	end try
 end tell
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
-```
-
-##
-
-```applescript
-
 ```

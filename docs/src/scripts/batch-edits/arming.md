@@ -2,6 +2,8 @@
 
 ## Arm
 
+Arms selected cues
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -16,6 +18,8 @@ end tell
 
 ## Disarm
 
+Disarms selected cues
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -29,6 +33,8 @@ end tell
 ```
 
 ## Toggle Armed State
+
+Toggles the armed state of selected cues. Evaluates state cue-by-cue.
 
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts

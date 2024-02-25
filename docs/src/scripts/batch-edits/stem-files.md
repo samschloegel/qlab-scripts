@@ -2,6 +2,8 @@
 
 ## Reveal File Target
 
+This will reveal the file target of the last selected Audio cue in the Finder. QLab also provides a built-in tool for this in **Tools > Reveal target file in Finder** but it does not have an associated hotkey
+
 ```applescript
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
@@ -20,11 +22,19 @@ end tell
 
 ## Bump Version by File Name
 
-```applescript
+You have a group of audio cues, which are stems for a piece of music. The filenames all end in "v03" or something similar. You just bounced new stem files called "v04" but you don't want to tediously manually re-target them all. No one wants to hold for sound. Use this script instead! All the "v04" files must be located in the same folder as the "v03" files.
+
+::: tip USER PARAMETERS
+
+`versionLength` is the number of digits used for version numbers. 2 is recommended: v1 / v01
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
-set versionLength to 2 -- How many digits for versioning? v1 / v01, 2 digits recommended
+set versionLength to 2
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set theSelection to (selected as list)
@@ -60,12 +70,29 @@ end tell
 
 ## Bump Version by Folder
 
-```applescript
+Similar situation to the above, but you like to organize your stem versions into their own folders.
+
+Keep the filenames of the audio files identical (no "vXX" at the end) but put them into separate folders (maybe call the folder "Stems v03" or something like that).
+
+This script will ask you to select the folder of updated stem files, and then re-targets your audio cues to the files in that folder. This way, you don't lose the integrated fade envelope and other cue settings you've already built, but can batch re-target all your stems quickly and save tedious busy-work.
+
+::: tip USER PARAMETERS
+
+`versionLength` is the number of digits used for version numbers. 2 is recommended: v1 / v01
+
+:::
+
+::: warning
+
+Do not use slashes in your filenames. This script uses 'POSIX' /paths/to/files so adding slashes to the file names will break the current version of this script.
+
+:::
+
+```applescript{4}
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
 -- Built for QLab 5. v211121-01
 
-set versionLength to 2 -- How many digits for versioning? v1 / v01
--- Do not use slashes in your filenames
+set versionLength to 2
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set theSelection to (selected as list)
