@@ -15,7 +15,7 @@ export default defineConfig({
       {
         text: "Guide",
         items: [
-          { text: "How to use", link: "/guide/" },
+          { text: "How To", link: "/guide/" },
           { text: "License", link: "/guide/license" },
           { text: "QLab 5 vs QLab 4", link: "/guide/4v5" },
         ],
