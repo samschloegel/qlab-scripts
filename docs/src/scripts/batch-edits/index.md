@@ -16,7 +16,7 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 	set theSelection to (selected as list)
 
 	repeat with eachCue in theSelection
-		set q name of eachCue to "your mom"
+		-- Do something here
 	end repeat
 
 end tell
