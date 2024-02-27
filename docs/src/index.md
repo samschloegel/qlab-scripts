@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Sam's QLab Scripts"
-  tagline: Complex QLab programming can be made much simpler with the use of Applescript automation.
+  tagline: Complex QLab programming can be made much simpler with the use of AppleScript automation.
   actions:
     - theme: brand
       text: Documentation
@@ -37,6 +37,6 @@ Any questions, suggestions, bug reports, or other feedback - please [submit an i
 
 ---
 
-Not affiliated with [Figure53](https://figure53.com/). QLab's Applescript documentation can be found [here](https://qlab.app/docs/v5/scripting/applescript-dictionary-v5/).
+Not affiliated with [Figure53](https://figure53.com/). QLab's AppleScript documentation can be found [here](https://qlab.app/docs/v5/scripting/applescript-dictionary-v5/).
 
 ---
