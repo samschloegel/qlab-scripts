@@ -6,6 +6,9 @@ export default defineConfig({
   base: "/qlab-scripts/",
   srcDir: "src",
   cleanUrls: true,
+  markdown: {
+    lineNumbers: true,
+  },
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
