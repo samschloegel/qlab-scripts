@@ -6,6 +6,9 @@ export default defineConfig({
   base: "/qlab-scripts/",
   srcDir: "src",
   cleanUrls: true,
+  markdown: {
+    lineNumbers: true,
+  },
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
@@ -78,6 +81,18 @@ export default defineConfig({
     },
     search: {
       provider: "local",
+    },
+    externalLinkIcon: true,
+    lastUpdated: {
+      text: "Last updated",
+      formatOptions: {
+        dateStyle: "short",
+      },
+    },
+    editLink: {
+      pattern:
+        "https://github.com/samschloegel/qlab-scripts/tree/main/docs/src/:path",
+      text: "Suggest an edit on GitHub",
     },
   },
 });
