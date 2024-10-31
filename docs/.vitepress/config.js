@@ -79,5 +79,17 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    externalLinkIcon: true,
+    lastUpdated: {
+      text: "Last updated",
+      formatOptions: {
+        dateStyle: "short",
+      },
+    },
+    editLink: {
+      pattern:
+        "https://github.com/samschloegel/qlab-scripts/tree/main/docs/src/:path",
+      text: "Suggest an edit on GitHub",
+    },
   },
 });
