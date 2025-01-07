@@ -3,7 +3,7 @@
 
 set userColor to "Purple"
 set userPrefix to "sd"
-set userCueName to "DiGiCo Snapshot "
+set userCueName to "DiGiCo Snapshot"
 set userNameParent to true
 
 tell application id "com.figure53.QLab.5" to tell front workspace
@@ -30,7 +30,7 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 		
 		if userNameParent and q type of theParent is "Group" then
 			set parentName to q name of theParent
-			set q name of theParent to parentName & " | Desk Cue " & theSnapshot
+			set q name of theParent to parentName & " | " & userCueName & " " & theSnapshot
 			if q color of theParent is "None" then set q color of theParent to userColor
 		end if
 		
