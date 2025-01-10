@@ -37,8 +37,26 @@ You do not have to stick to this scheme in an absolute manner - just as a starti
 
 ## Add Snapshot to Cue List
 
+::: tip USER PARAMETERS
+`userColor` see list generator script above - must match
+
+`userPrefix` see list generator script above - must match
+
+`userNameParent` If set to 'true', the parent group of the newly created cue will be color coded and have a suffix added to indicate the presence of a console cue
+
+:::
+
 <<< @/../../scripts v5/DiGiCo Snapshots/Create DiGiCo Snapshot.applescript
 
 ## Add Snapshot Group to Cue List
+
+::: tip USER PARAMETERS
+`userColor` see list generator script above - must match
+
+`userPrefix` see list generator script above - must match
+
+`userNameParent` If set to 'true', the parent group of the newly created cue will be color coded and have a suffix added to indicate the presence of a console cue
+
+:::
 
 <<< @/../../scripts v5/DiGiCo Snapshots/Create DiGiCo Snapshot Group.applescript
