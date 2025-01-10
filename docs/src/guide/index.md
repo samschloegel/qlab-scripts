@@ -36,7 +36,7 @@ Many of the scripts here are best used in a Script Cue, with an assigned hotkey 
 
 1. Applications > Utilities > Script Editor > New Script
 1. Paste script in and click "Compile" (Cmd-K)
-1. Do waht you need to in QLab (such as selecting relevant cues)
+1. Do what you need to in QLab (such as selecting relevant cues)
 1. In Script Editor, click Run (Cmd-R)
 
 ## Learning to write your own scripts
