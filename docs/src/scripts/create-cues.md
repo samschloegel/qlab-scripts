@@ -1,4 +1,4 @@
-# Create Cues
+# Create Fades, etc.
 
 ## Fades for Selected Cues
 
@@ -20,7 +20,7 @@
 
 <<< @/../../scripts v5/Create Fades/Create fade-and-stops for selected.applescript{4}
 
-## OSC Trigger for Cue X
+## Create OSC Trigger for Cue X
 
 This is an edge-use thing and only useful if you need QLab to trigger itself via OSC for some particular reason.
 
@@ -40,7 +40,7 @@ This is an edge-use thing and only useful if you need QLab to trigger itself via
 
 <<< @/../../scripts v5/Create Triggers/Create OSC trigger for cue x.applescript
 
-## OSC Triggers for Selected Cues
+## Create OSC Triggers for Selected
 
 Creates a group of network cues which target the selected cues
 
@@ -52,7 +52,7 @@ Creates a group of network cues which target the selected cues
 
 <<< @/../../scripts v5/Create Triggers/Create OSC triggers for selected.applescript{4}
 
-## Start Cues Targeting Selected Cues
+## Create Start Cues Targeting Selected
 
 Creates a group of Start cues which target the selected cues
 

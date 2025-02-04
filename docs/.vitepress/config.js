@@ -53,6 +53,7 @@ export default defineConfig({
           },
 
           { text: "Creating Fades, etc.", link: "/scripts/create-cues" },
+          { text: "Groups", link: "/scripts/groups" },
           {
             text: "Console Recalls",
             collapsed: false,

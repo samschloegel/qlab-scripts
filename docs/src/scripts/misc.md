@@ -12,32 +12,6 @@ That one long cue takes forever, you're in tech, and you need the cue to complet
 
 <<< @/../../scripts v5/Complete selected.applescript
 
-## Copy uniqueID of Selected
-
-Copies the uniqueID of the selected cue to the clipboard. If multiple cues are selected, only copies the ID of the last one.
-
-<<< @/../../scripts v5/Copy uniqueID of selected.applescript{4}
-
-## DS100 Speaker Check Builder
-
-Builds a cue list for checking individual outputs of a DS100, based on a CSV file, using OSC. Further description/explanation to come. Feel free to try it out in the meantime, but maybe not in your show file the first time.
-
-<<< @/../../scripts v5/DS100 Speaker Check Builder.applescript{4-6}
-
-## Group Selected Individually
-
-Encapsulate each selected cue within its own group.
-
-<<< @/../../scripts v5/Group selected individually.applescript
-
-## Group Selected, Inherit Name
-
-Puts selected cues in a group together.
-
-Why use this instead of the New Group Cue hotkey? Because it works even if there is only one cue selected - and in that case, it will copy the cue's name to the group's name.
-
-<<< @/../../scripts v5/Group selected, inherit name.applescript
-
 ## Load Parent Group to Start of Selected Child
 
 You have a big, long-running timeline group. You're in tech and need to start from the beginning of the fourth child in the timeline. Select that child cue, and run this script using a hotkey. It will put you in the right place.
@@ -49,6 +23,30 @@ You have a big, long-running timeline group. You're in tech and need to start fr
 :::
 
 <<< @/../../scripts v5/Load Parent Group to start of selected Child.applescript{4}
+
+## "Undo Go"
+
+You hit 'GO' too soon and you're panicking. But don't panic all those cues that were already running! Just assign this as a hotkey near your panic button to only stop the cues from the most recently-triggered sequence.
+
+::: warning
+
+This could have some weird, unintended consequences, and is completely context-dependent. Only use if you know what you're doing.
+
+:::
+
+<<< @/../../scripts v5/Undo Go.applescript
+
+## Copy uniqueID of Selected
+
+Copies the uniqueID of the selected cue to the clipboard. If multiple cues are selected, only copies the ID of the last one.
+
+<<< @/../../scripts v5/Copy uniqueID of selected.applescript{4}
+
+## DS100 Speaker Check Builder
+
+Builds a cue list for checking individual outputs of a DS100, based on a CSV file, using OSC. Further description/explanation to come. Feel free to try it out in the meantime, but maybe not in your show file the first time.
+
+<<< @/../../scripts v5/DS100 Speaker Check Builder.applescript{4-6}
 
 ## Move to Cut List
 
@@ -63,18 +61,6 @@ The selected cues are moved to the 'cut cues' list you've chosen. They are then 
 :::
 
 <<< @/../../scripts v5/Move to cut list.applescript{4}
-
-## "Undo Go"
-
-You hit 'GO' too soon and you're panicking. But don't panic all those cues that were already running! Just assign this as a hotkey near your panic button to only stop the cues from the most recently-triggered sequence.
-
-::: warning
-
-This could have some weird, unintended consequences, and is completely context-dependent. Only use if you know what you're doing.
-
-:::
-
-<<< @/../../scripts v5/Undo Go.applescript
 
 ## Which Cues Use Output X?
 
