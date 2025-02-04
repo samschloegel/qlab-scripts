@@ -1,24 +1,4 @@
-# Create Fades, etc.
-
-## Fades for Selected Cues
-
-::: tip USER PARAMETERS
-
-`userDuration` is the duration in seconds of the generated fade cues
-
-:::
-
-<<< @/../../scripts v5/Create Fades/Create fades for selected.applescript{4}
-
-## Fade-and-Stops for Selected Cues
-
-::: tip USER PARAMETERS
-
-`userDuration` is the duration in seconds of the generated fade cues
-
-:::
-
-<<< @/../../scripts v5/Create Fades/Create fade-and-stops for selected.applescript{4}
+# Create Triggers
 
 ## Create OSC Trigger for Cue X
 
@@ -52,8 +32,14 @@ Creates a group of network cues which target the selected cues
 
 <<< @/../../scripts v5/Create Triggers/Create OSC triggers for selected.applescript{4}
 
-## Create Start Cues Targeting Selected
+## Create Start Triggers for Selected
 
 Creates a group of Start cues which target the selected cues
 
 <<< @/../../scripts v5/Create Triggers/Create Start triggers for selected.applescript
+
+## Create LX MSC Cues
+
+Creates an MSC trigger based on user parameters and dialog input
+
+<<< @/../../scripts v5/Create Triggers/Create LX MSC Cue.applescript
