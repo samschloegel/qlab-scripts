@@ -1,5 +1,5 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
--- Built for QLab 5. v250107-01
+-- Built for QLab 5. v250217-01
 
 set userColor to "Purple"
 set userPrefix to "sd"
@@ -14,14 +14,12 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 		
 		make type "Start"
 		set theStart to last item of (selected as list)
-		
-		
 		set cue target of theStart to cue (userPrefix & theSnapshot)
 		set q color of theStart to userColor
 		
 		make type "Group"
 		set theGroup to last item of (selected as list)
-		set q name of theGroup to userCueName & theSnapshot
+		set q name of theGroup to userCueName & " " & theSnapshot
 		set q color of theGroup to userColor
 		
 		move cue id (uniqueID of theStart) of parent of theStart to end of cue id (uniqueID of theGroup)
