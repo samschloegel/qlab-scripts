@@ -1,10 +1,10 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
--- Built for QLab 5. v211121-01
+-- Built for QLab 5. v250207-01
 
 set userPrefix to "sd"
 set userCueName to "SD Snapshot "
 set userShowMIDIInfo to true
-set userCount to 118 -- The number of snapshot triggers to generate. Do not set above 384.
+set userCount to 400 -- The number of snapshot triggers to generate. Do not set above 400.
 
 
 tell application id "com.figure53.QLab.5" to tell front workspace
@@ -19,15 +19,18 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 		
 		set command of newCue to control_change
 		
-		if i is less than 129 then
+		if i is less than 100 then
 			set byteOne to 16
 			set byteTwo to i
-		else if i is less than 257 then
+		else if i is less than 200 then
 			set byteOne to 17
-			set byteTwo to (i - 128)
-		else
+			set byteTwo to (i - 100)
+		else if i is less than 300 then
 			set byteOne to 18
-			set byteTwo to (i - 256)
+			set byteTwo to (i - 200)
+		else
+			set byteOne to 19
+			set byteTwo to (i - 300)
 		end if
 		
 		set channel of newCue to 16
