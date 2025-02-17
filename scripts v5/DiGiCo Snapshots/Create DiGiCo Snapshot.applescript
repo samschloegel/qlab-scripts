@@ -1,5 +1,5 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
--- Built for QLab 5. v250217-01
+-- Built for QLab 5. v250217-02
 
 set userColor to "Purple"
 set userPrefix to "sd"
@@ -21,7 +21,7 @@ tell application id "com.figure53.QLab.5" to tell front workspace
 		set cue target of theStart to cue (userPrefix & theSnapshot)
 		set q color of theStart to userColor
 		
-		if q type of theSelection is "Group" and q number of theSelection is not "" then
+		if q type of theSelection is "Group" and q type of parent of theSelection is "Cue List" then
 			move cue id (uniqueID of theStart) to beginning of cue id (uniqueID of theSelection) of parent of theSelection
 			if userNameParent then
 				set parentName to q name of theSelection
