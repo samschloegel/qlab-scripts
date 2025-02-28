@@ -53,3 +53,21 @@
 :::
 
 <<< @/../../scripts v5/Batch Cue Edits/Clear Gangs.applescript
+
+## Set crosspoint
+
+Batch editing to set a specific cue level matrix crosspoint to a fixed number. While QLab provides lots of useful batch editing features, this will allow you to select large numbers of cues which may not all be audio cues specifically - but will then work on all audio cues within that selection.
+
+Note that this will only adjust audio cues, and not fades or mic cues.
+
+::: tip USER PARAMETERS
+
+`userLevel` The desired crosspoint level
+
+`userRow` The audio file channel; 0 is the cue output fader, 1 is typically Left, 2 Right
+
+`userColumn` The cue output channel; 0 is the main column, 1 is the first cue output, etc.
+
+:::
+
+<<< @/../../scripts v5/Level changes/Set crosspoint.applescript
