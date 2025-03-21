@@ -96,3 +96,9 @@ The exact formatting of your cue numbers needs to be numbers only, with or witho
 :::
 
 <<< @/../../scripts v5/Set trigger from cue number.applescript
+
+## Device Patch Column Copier
+
+Copies and pastes whole columns in the Device Patch matrix of a given audio patch.
+
+<<< @/../../scripts v5/Device Patch Columns.applescript
