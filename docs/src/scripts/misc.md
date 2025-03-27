@@ -36,9 +36,21 @@ This could have some weird, unintended consequences, and is completely context-d
 
 <<< @/../../scripts v5/Undo Go.applescript
 
-## Copy uniqueID of Selected
+## Copy uniqueIDs of Selected
 
-Copies the uniqueID of the selected cue to the clipboard. If multiple cues are selected, only copies the ID of the last one.
+Copies the uniqueIDs of the selected cues to the clipboard.
+
+If no cues are selected, copies the unique ID of the cue list.
+
+If multiple cues are selected, copies them as a list.
+
+::: tip USER PARAMETERS
+
+`userAlert` If true, will display a popup to the user when the script runs.
+
+`userDelimiter` is used to separate the IDs if there is more than one cue selected.
+
+:::
 
 <<< @/../../scripts v5/Copy uniqueID of selected.applescript{4}
 

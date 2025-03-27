@@ -1,18 +1,29 @@
 -- For help, bug reports, or feature suggestions, please visit https://github.com/samschloegel/qlab-scripts
--- Built for QLab 5. v250321-01
+-- Built for QLab 5. v250327-01
 
 set userAlert to true
+set userDelimiter to "
+"
 
 tell application id "com.figure53.QLab.5" to tell front workspace
 	set theCount to count of selected
+	set theCues to {}
 	
 	if theCount is 0 then
-		set theCue to current cue list
+		set end of theCues to current cue list
 	else
-		set theCue to last item of (selected as list)
+		set theCues to (selected as list)
 	end if
 	
-	set theID to uniqueID of theCue
-	set the clipboard to theID
-	if userAlert then display alert "The Unique ID of " & q number of theCue & " \"" & q name of theCue & "\" (" & theID & ") has been copied to the clipboard."
+	set theIDs to ""
+	repeat with eachCue in theCues
+		if length of theIDs is not 0 then
+			set theIDs to theIDs & userDelimiter
+		end if
+		set theIDs to theIDs & uniqueID of eachCue
+	end repeat
+	
+	set the clipboard to theIDs
+	if userAlert then display alert "Copied " & theCount & " items"
+	
 end tell
