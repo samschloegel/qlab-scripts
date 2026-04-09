@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/samschloegel/qlab-scripts#readme",
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.4"
   }
 }
